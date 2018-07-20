@@ -1,3 +1,28 @@
-.registro, .login {
-	color: #000;
+.container {
+	max-width: 30em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	margin-bottom: 15px; 
+}
+
+.row {
+	margin: ;
+}
+
+ul {
+	list-style:none;
+}
+
+#login {
+	margin-left: 333px;
+}
+
+.btn {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: black
 }

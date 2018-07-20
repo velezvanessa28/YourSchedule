@@ -38,6 +38,7 @@
  				alert('Debe ingresar una contrasena');
  			}
  			else {
+
  				firebase
  				.auth()
  				.createUserWithEmailAndPassword(email, password)
