@@ -1,3 +1,47 @@
 body {
 	font-family: arial;
 }
+
+tr.dias {
+	background-color: red;
+}
+
+.horas {
+	background-color: #88AEF7; 
+}
+
+.table td {
+	padding: 30px;
+}
+
+.container {
+	margin-left: 10px;
+}
+
+tr.dias2 {
+	background-color: #FA24D3;
+}
+
+.lunes {
+	background-color: purple;
+}
+
+.martes {
+	background-color: #4281FD;
+}
+
+.miercoles {
+	background-color: #0CAF24; 
+}
+
+.jueves {
+	background-color: #FCE030;
+}
+
+.viernes {
+	background-color: #FF8700;
+}
+
+.sabado {
+	background-color: #FF2C2C;
+}
