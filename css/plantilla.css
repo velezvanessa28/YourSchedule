@@ -34,3 +34,18 @@ tr.dias3 {
 .horas3 {
 	background-color: #609;
 }
+
+#table {
+	padding: 0;
+}
+
+input {
+	padding: 0;
+	width: 10rem;
+	height: 5rem;
+	border: 0;
+}
+
+input:first-of-type{
+	background-color: blue;
+	}
