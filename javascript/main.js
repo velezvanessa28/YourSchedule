@@ -54,3 +54,9 @@ function edita(obj) {
       
   }
 }
+$('#guardar').click(function(){
+  firebase.database().ref("guardalo")
+  .set({
+    horario:"input"
+  })
+});
