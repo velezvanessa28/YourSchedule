@@ -1,6 +1,5 @@
 $('.horas').click(function modifica(data, handler) {
   if (data.target == this) {
-    //Do Stuff (only element clicked, not children)
     tab=document.getElementById('tabla');
     for (i=0; ele=tab.getElementsByTagName('td')[i]; i++) {
       if (ele){
@@ -11,7 +10,6 @@ $('.horas').click(function modifica(data, handler) {
 });
 $('.horas2').click(function modifica(data, handler) {
   if (data.target == this) {
-    //Do Stuff (only element clicked, not children)
     tab=document.getElementById('tabla');
     for (i=0; ele=tab.getElementsByTagName('td')[i]; i++) {
       if (ele){
@@ -22,7 +20,6 @@ $('.horas2').click(function modifica(data, handler) {
 });
 $('.horas3').click(function modifica(data, handler) {
   if (data.target == this) {
-    //Do Stuff (only element clicked, not children)
     tab=document.getElementById('tabla');
     for (i=0; ele=tab.getElementsByTagName('td')[i]; i++) {
       if (ele){
@@ -31,10 +28,6 @@ $('.horas3').click(function modifica(data, handler) {
     }
   }
 });
-
-function guardar(){
-  var guarda = document.getElementById('tabla').value;
-}
 function edita(obj) {
   empz = obj.parentNode.parentNode;
   celda = empz.getElementsByTagName('td');
@@ -48,15 +41,24 @@ function edita(obj) {
   celdaTmp.innerHTML = '';
   inp = celdaTmp.appendChild(document.createElement('input'));
   celdaTmp.style = "padding:0;";
-  inp.value="";
-  //inp.onblur = function() { this.parentNode.innerHTML = this.value  }
-    
-      
+  inp.value="";    
+  }
+}
+for(i=celdaTmp; i<fin;){
+  if(i++){
+  return inp;
   }
 }
 $('#guardar').click(function(){
-  firebase.database().ref("guardalo")
-  .set({
-    horario:"input"
-  })
-});
+  var datos={
+  horas1:$('.horas input').val(),
+  lunes:$('.lunes input').val(),
+  martes:$('.martes input').val(),
+  miercoles:$('.miercoles input').val(),
+  jueves:$('.jueves input').val(),
+  viernes:$('.viernes input').val(),
+  sabado:$('.sabado input').val(),
+
+};
+  firebase.database().ref("horas").push(datos);
+})
