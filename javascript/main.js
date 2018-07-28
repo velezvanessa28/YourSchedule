@@ -34,7 +34,7 @@ function edita(obj) {
   inicio = 0;//celda para comenzar
   fin = 42;//celda para terminar
   
-  for(i=inicio;i<fin;i++){
+  for(i=inicio;i<fin;i++){  
   var celdaTmp = celda[i];
     
   txt = celdaTmp.innerHTML;
@@ -44,10 +44,11 @@ function edita(obj) {
   inp.value="";    
   }
 }
-for(i=celdaTmp; i<fin;){
-  if(i++){
-  return inp;
-  }
+
+$( "td" ).each(function(val) {
+for(i=inicio;i<fin;i++){
+  
+}
 }
 $('#guardar').click(function(){
   var datos={
