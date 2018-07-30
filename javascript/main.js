@@ -45,12 +45,11 @@ function edita(obj) {
   }
 }
 
-$( "td" ).each(function(val) {
-for(i=inicio;i<fin;i++){
-  
-}
-}
+
 $('#guardar').click(function(){
+  $( "td" ).each(function(guarda_datos) {
+console.log(inp);
+});
   var datos={
   horas1:$('.horas input').val(),
   lunes:$('.lunes input').val(),
