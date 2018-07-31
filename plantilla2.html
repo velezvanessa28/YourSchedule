@@ -1,87 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Plantilla</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css"  href='css/plantilla.css' />
+  <title>Plantilla</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"  href='css/plantilla.css' />
 </head>
 <body>
-    <div class="container">
-  <div class="col-md-6"><h2>Your Schedule</h2> </div>          
-  <table class="table table-bordered" id="tabla">
-        <tbody>
-      <tr class="dias2">
-        <th>Hours</th>
-        <th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Thursday</th>
-        <th>Friday</th>
-        <th>Saturday</th>
-      </tr>
+  <div class="container">
+    <div class="col-md-6"><h2>Your Schedule</h2> </div>          
+    <table class="table table-bordered" id="tabla">
+      <tbody>
+        <tr class="dias2">
+          <th>Hours</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
       </tbody>
-    <tbody class="cuerpo">
-      <tr class="lunes">
-        <td class="horas2" onClick="modifica()"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr class="martes">
-        <td  class="horas2"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr class="miercoles">
-        <td  class="horas2"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr class="jueves">
+      <tr>
         <td class="horas2"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="lunes2"></td>
+        <td class="martes2"></td>
+        <td class="miercoles2"></td>
+        <td class="jueves2"></td>
+        <td class="viernes2"></td>
+        <td class="sabado2"></td>
       </tr>
-      <tr class="viernes">
+      <tr>
         <td class="horas2"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="lunes2"></td>
+        <td class="martes2"></td>
+        <td class="miercoles2"></td>
+        <td class="jueves2"></td>
+        <td class="viernes2"></td>
+        <td class="sabado2"></td>
       </tr>
-      <tr class="sabado">
+      <tr>
         <td class="horas2"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="lunes2"></td>
+        <td class="martes2"></td>
+        <td class="miercoles2"></td>
+        <td class="jueves2"></td>
+        <td class="viernes2"></td>
+        <td class="sabado2"></td>
+      </tr>
+      <tr>
+        <td class="horas2"></td>
+        <td class="lunes2"></td>
+        <td class="martes2"></td>
+        <td class="miercoles2"></td>
+        <td class="jueves2"></td>
+        <td class="viernes2"></td>
+        <td class="sabado2"></td>
+      </tr>
+      <tr>
+        <td class="horas2"></td>
+        <td class="lunes2"></td>
+        <td class="martes2"></td>
+        <td class="miercoles2"></td>
+        <td class="jueves2"></td>
+        <td class="viernes2"></td>
+        <td class="sabado2"></td>
+      </tr>
+      <tr>
+        <td class="horas2"></td>
+        <td class="lunes2"></td>
+        <td class="martes2"></td>
+        <td class="miercoles2"></td>
+        <td class="jueves2"></td>
+        <td class="viernes2"></td>
+        <td class="sabado2"></td>
       </tr>
     </tbody>
   </table>
+  <button type="submit" id="guardar">Guardar</button>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-    <script src="javascript/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script src="javascript/firebase.js"></script>
+<script src="javascript/main2.js"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@ tr.dias {
 
 .table td {
 	padding: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 60px;
 }
 
 .container {
@@ -23,7 +23,7 @@ tr.dias2 {
 	background-color: #646464;
 }
 
-.martes,.jueves,.sabado {
+.horas2,.martes2,.jueves2,.sabado2 {
 	background-color: #EBEBEB;
 }
 
@@ -46,6 +46,6 @@ input {
 	border: 0;
 }
 
-input:first-of-type{
-	background-color: blue;
-	}
+.table-bordered td,{
+    border: 1px solid #dee2e6;
+}

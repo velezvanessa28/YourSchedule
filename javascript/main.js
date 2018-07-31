@@ -8,26 +8,6 @@ $('.horas').click(function modifica(data, handler) {
     }
   }
 });
-$('.horas2').click(function modifica(data, handler) {
-  if (data.target == this) {
-    tab=document.getElementById('tabla');
-    for (i=0; ele=tab.getElementsByTagName('td')[i]; i++) {
-      if (ele){
-       edita(ele);
-     }
-    }
-  }
-});
-$('.horas3').click(function modifica(data, handler) {
-  if (data.target == this) {
-    tab=document.getElementById('tabla');
-    for (i=0; ele=tab.getElementsByTagName('td')[i]; i++) {
-      if (ele){
-       edita(ele);
-     }
-    }
-  }
-});
 function edita(obj) {
   empz = obj.parentNode.parentNode;
   celda = empz.getElementsByTagName('td');
