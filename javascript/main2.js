@@ -52,5 +52,18 @@ var datos={
 
 };
   firebase.database().ref("horas2").push(datos);
-
+averiguarDia = prompt('What day is today \n A-Monday \n B-Tuesday \n C-Wednesday \n D-Thursday \n E-Friday \n F-Saturday');
+if (averiguarDia === 'A') {
+  alert('Your classes of the day Monday are');
+}if(averiguarDia === 'B'){
+  alert('Your classes of the day Tuesday are');
+}if(averiguarDia === 'C'){
+  alert('Your classes of the day Wednesday are');
+}if(averiguarDia === 'D'){
+  alert('Your classes of the day Thursday are');
+}if(averiguarDia === 'E'){
+  alert('Your classes of the day Friday are');
+}if(averiguarDia === 'F'){
+  alert('Your classes of the day Saturday are');
+}
 });
