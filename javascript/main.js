@@ -56,7 +56,7 @@ var datos={
   firebase.database().ref("horas").push(datos);
 averiguarDia = prompt('What day is today \n A-Monday \n B-Tuesday \n C-Wednesday \n D-Thursday \n E-Friday \n F-Saturday');
 if (averiguarDia === 'A') {
-  alert('Your classes of the day Monday are');
+  alert('Your classes of the day Monday are ' + $('.lunes input').val());;
 }if(averiguarDia === 'B'){
   alert('Your classes of the day Tuesday are');
 }if(averiguarDia === 'C'){
