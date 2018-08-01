@@ -53,19 +53,62 @@ var datos={
   sabado: sabadoVal,
 
 };
-  firebase.database().ref("horas").push(datos);
+  firebase.database().ref("plantilla1").push(datos);
 averiguarDia = prompt('What day is today \n A-Monday \n B-Tuesday \n C-Wednesday \n D-Thursday \n E-Friday \n F-Saturday');
 if (averiguarDia === 'A') {
-  alert('Your classes of the day Monday are ' + $('.lunes input').val());;
-}if(averiguarDia === 'B'){
-  alert('Your classes of the day Tuesday are');
-}if(averiguarDia === 'C'){
-  alert('Your classes of the day Wednesday are');
-}if(averiguarDia === 'D'){
-  alert('Your classes of the day Thursday are');
-}if(averiguarDia === 'E'){
-  alert('Your classes of the day Friday are');
-}if(averiguarDia === 'F'){
-  alert('Your classes of the day Saturday are');
+  alert('Your classes of the day Monday are  \n' + horas[0].value + '\n' + lunes[0].value + '\n' + horas[1].value + '\n' + lunes[1].value + '\n' + horas[2].value + '\n' + lunes[2].value + '\n' + horas[3].value + '\n' + lunes[3].value + '\n' + horas[4].value + '\n' + lunes[4].value + '\n'  + horas[5].value + '\n' + lunes[5].value)
+averiguaTarea = prompt ('Do you have homework?');
+if(averiguaTarea === 'yes') {
+  EspecificaTarea = prompt('What?');
+}else if(averiguaTarea === 'No'){
+  alert('Enjoy your day :)');
+}
+}
+if(averiguarDia === 'B'){
+  alert('Your classes of the day Tuesday are \n' + horas[0].value + '\n' + martes[0].value + '\n' + horas[1].value + '\n' + martes[1].value + '\n' + horas[2].value + '\n' + martes[2].value + '\n' + horas[3].value + '\n' + martes[3].value + '\n' + horas[4].value + '\n' + martes[4].value + '\n' + horas[5].value + '\n' + martes[5].value)
+averiguaTarea = prompt ('Do you have homework?');
+if(averiguaTarea === 'yes') {
+  EspecificaTarea = prompt('What?');
+}else if(averiguaTarea === 'No'){
+  alert('Enjoy your day :)');
+}
+}
+if(averiguarDia === 'C'){ 
+  alert('Your classes of the day Wednesday are \n' + horas[0].value + '\n' + miercoles[0].value + '\n' + horas[1].value + '\n' + miercoles[1].value + horas[2].value + '\n' + miercoles[2].value + '\n' + horas[3].value + '\n' + miercoles[3].value + '\n' + horas[4].value + '\n' + miercoles[4].value + '\n' + horas[5].value + '\n' + miercoles[5].value)
+averiguaTarea = prompt ('Do you have homework?');
+if(averiguaTarea === 'yes') {
+  EspecificaTarea = prompt('What?');
+}else if(averiguaTarea === 'No'){
+  alert('Enjoy your day :)');
+}
+}
+if(averiguarDia === 'D'){
+  alert('Your classes of the day Thursday are \n' + horas[0].value + '\n' + jueves[0].value + '\n' + horas[1].value + '\n' + jueves[1].value + '\n' + horas[2].value + '\n' + jueves[2].value + '\n' +  horas[3].value + '\n' + jueves[3].value + '\n' + horas[4].value + '\n' + jueves[4].value + '\n' + horas[5].value + '\n' + jueves[5].value)
+averiguaTarea = prompt ('Do you have homework?');
+if(averiguaTarea === 'yes') {
+  EspecificaTarea = prompt('What?');
+}else if(averiguaTarea === 'No'){
+  alert('Enjoy your day :)');
+}
+}
+if(averiguarDia === 'E'){
+  alert('Your classes of the day Friday are \n' + horas[0].value + '\n' + viernes[0].value + '\n' + horas[1].value + '\n' + viernes[1].value + '\n' + horas[2].value + '\n' + viernes[2].value + '\n' + horas[3].value + '\n' + viernes[3].value + '\n' + horas[4].value + '\n' + viernes[4].value + '\n' + horas[5].value + '\n' + viernes[5].value)
+averiguaTarea = prompt ('Do you have homework?');
+if(averiguaTarea === 'yes') {
+  EspecificaTarea = prompt('What?');
+}else if(averiguaTarea === 'No'){
+  alert('Enjoy your day :)');
+}
+}
+if(averiguarDia === 'F'){
+  alert('Your classes of the day Saturday are \n' + horas[0].value + '\n' + sabado[0].value + '\n' + horas[1].value + '\n' + sabado[1].value
+   + '\n' + horas[2].value + '\n' + sabado[2].value + '\n' + horas[3].value + '\n' + sabado[3].value
+    + '\n' + horas[4].value + '\n' + sabado[4].value + '\n' + horas[5].value + '\n' + sabado[5].value)
+  averiguaTarea = prompt ('Do you have homework?');
+if(averiguaTarea === 'yes') {
+  EspecificaTarea = prompt('What?');
+}else if(averiguaTarea === 'No'){
+  alert('Enjoy your day :)');
+}
 }
 });

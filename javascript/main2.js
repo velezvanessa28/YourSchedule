@@ -26,8 +26,8 @@ function edita(obj) {
 }
 $('#guardar').on("click", function(){
 
-  var horas2 = $('.horas2 input');
-  var horas2Val = { "h1": horas2[0].value, "h2": horas2[1].value, "h3": horas2[2].value, "h4": horas2[3].value, "h5": horas2[4].value, "h6": horas2[5].value};
+  var hora2 = $('.horas2 input');
+  var hora2Val = { "h1": hora2[0].value, "h2": hora2[1].value, "h3": hora2[2].value, "h4": hora2[3].value, "h5": hora2[4].value, "h6": hora2[5].value};
   var lunes2 = $('.lunes2 input');
   var lunes2Val = {"l1": lunes2[0].value, "l2": lunes2[1].value, "l3": lunes2[2].value, "l4": lunes2[3].value, "l5": lunes2[4].value, "l6": lunes2[5].value,};
   var martes2 = $('.martes2 input');
@@ -42,7 +42,7 @@ $('#guardar').on("click", function(){
   var sabado2Val = {"s1": sabado2[0].value, "s2": sabado2[1].value, "s3": sabado2[2].value, "s4": sabado2[3].value, "s5": sabado2[4].value, "s6": sabado2[5].value,};
 
 var datos={
-  horas2: horas2Val,
+  hora2: hora2Val,
   lunes2: lunes2Val,
   martes2: martes2Val,
   miercoles2: miercoles2Val,
@@ -51,19 +51,32 @@ var datos={
   sabado2: sabado2Val,
 
 };
-  firebase.database().ref("horas2").push(datos);
+  firebase.database().ref("plantilla2").push(datos);
 averiguarDia = prompt('What day is today \n A-Monday \n B-Tuesday \n C-Wednesday \n D-Thursday \n E-Friday \n F-Saturday');
 if (averiguarDia === 'A') {
-  alert('Your classes of the day Monday are');
-}if(averiguarDia === 'B'){
-  alert('Your classes of the day Tuesday are');
-}if(averiguarDia === 'C'){
-  alert('Your classes of the day Wednesday are');
-}if(averiguarDia === 'D'){
-  alert('Your classes of the day Thursday are');
-}if(averiguarDia === 'E'){
-  alert('Your classes of the day Friday are');
-}if(averiguarDia === 'F'){
-  alert('Your classes of the day Saturday are');
+  alert('Your classes of the day Monday are  \n' + horas2[0].value + '\n' + lunes2[0].value + '\n' + horas2[1].value + '\n' + lunes2[1].value + '\n' + horas2[2].value + '\n' + lunes2[2].value + '\n' + horas2[3].value + '\n' + lunes2[3].value + '\n' + horas2[4].value + '\n' + lunes2[4].value + '\n'  + horas2[5].value + '\n' + lunes2[5].value)
+averiguaTarea = prompt ('Do you have homework?');
+if(averiguaTarea === 'yes') {
+  EspecificaTarea = prompt('What?');
+}else if(averiguaTarea === 'No'){
+  alert('Enjoy your day :)');
+}
+}
+if(averiguarDia === 'B'){
+  alert('Your classes of the day Tuesday are \n' + horas2[0].value + '\n' + martes2[0].value + '\n' + horas2[1].value + '\n' + martes2[1].value + '\n' + horas2[2].value + '\n' + martes2[2].value + '\n' + horas2[3].value + '\n' + martes2[3].value + '\n' + horas2[4].value + '\n' + martes2[4].value + '\n' + horas2[5].value + '\n' + martes2[5].value)
+}
+if(averiguarDia === 'C'){ 
+  alert('Your classes of the day Wednesday are \n' + horas2[0].value + '\n' + miercoles2[0].value + '\n' + horas2[1].value + '\n' + miercoles2[1].value + horas2[2].value + '\n' + miercoles2[2].value + '\n' + horas2[3].value + '\n' + miercoles2[3].value + '\n' + horas2[4].value + '\n' + miercoles2[4].value + '\n' + horas2[5].value + '\n' + miercoles2[5].value)
+}
+if(averiguarDia === 'D'){
+  alert('Your classes of the day Thursday are \n' + horas2[0].value + '\n' + jueves2[0].value + '\n' + horas2[1].value + '\n' + jueves2[1].value + '\n' + horas2[2].value + '\n' + jueves2[2].value + '\n' +  horas2[3].value + '\n' + jueves2[3].value + '\n' + horas2[4].value + '\n' + jueves2[4].value + '\n' + horas2[5].value + '\n' + jueves2[5].value)
+}
+if(averiguarDia === 'E'){
+  alert('Your classes of the day Friday are \n' + horas2[0].value + '\n' + viernes2[0].value + '\n' + horas2[1].value + '\n' + viernes2[1].value + '\n' + horas2[2].value + '\n' + viernes2[2].value + '\n' + horas2[3].value + '\n' + viernes2[3].value + '\n' + horas2[4].value + '\n' + viernes2[4].value + '\n' + horas2[5].value + '\n' + viernes2[5].value)
+}
+if(averiguarDia === 'F'){
+  alert('Your classes of the day Saturday are \n' + horas2[0].value + '\n' + sabado2[0].value + '\n' + horas2[1].value + '\n' + sabado2[1].value
+   + '\n' + horas2[2].value + '\n' + sabado2[2].value + '\n' + horas2[3].value + '\n' + sabado2[3].value
+    + '\n' + horas2[4].value + '\n' + sabado2[4].value + '\n' + horas2[5].value + '\n' + sabado2[5].value)
 }
 });
