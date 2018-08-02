@@ -62,6 +62,7 @@ averiguaTarea = prompt ('Do you have homework?');
 averiguaTarea =  averiguaTarea.toLowerCase();
 if(averiguaTarea === 'yes') {
   EspecificaTarea = prompt('What?');
+  alert(EspecificaTarea);
 }else if(averiguaTarea === 'No'){
   alert('Enjoy your day :)');
 }
@@ -83,6 +84,7 @@ averiguaTarea = prompt ('Do you have homework?');
 averiguaTarea =  averiguaTarea.toLowerCase();
 if(averiguaTarea === 'yes') {
   EspecificaTarea = prompt('What?');
+  alert(EspecificaTarea);
 }else if(averiguaTarea === 'No'){
   alert('Enjoy your day :)');
 }
@@ -93,6 +95,7 @@ averiguaTarea = prompt ('Do you have homework?');
 averiguaTarea =  averiguaTarea.toLowerCase();
 if(averiguaTarea === 'yes') {
   EspecificaTarea = prompt('What?');
+  alert(EspecificaTarea);
 }else if(averiguaTarea === 'No'){
   alert('Enjoy your day :)');
 }
@@ -103,6 +106,7 @@ averiguaTarea = prompt ('Do you have homework?');
 averiguaTarea =  averiguaTarea.toLowerCase();
 if(averiguaTarea === 'yes') {
   var EspecificaTarea = prompt('What?');
+  alert(EspecificaTarea);
   console.log(EspecificaTarea);
 }
 else if(averiguaTarea === 'No'){
@@ -117,6 +121,7 @@ if(averiguarDia === 'F'){
   averiguaTarea =  averiguaTarea.toLowerCase();
 if(averiguaTarea === 'yes') {
   EspecificaTarea = prompt('What?');
+  alert(EspecificaTarea);
 }else if(averiguaTarea === 'No'){
   alert('Enjoy your day :)');
 }

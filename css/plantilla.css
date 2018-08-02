@@ -49,3 +49,7 @@ input {
 .table-bordered td,{
     border: 1px solid #dee2e6;
 }
+#guardar:hover {
+	background-color: #990909;
+	border-color: black;
+}

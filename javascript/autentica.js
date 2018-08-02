@@ -50,12 +50,6 @@
  				.createUserWithEmailAndPassword(email, password)
  				.then(function(){
  					location.href='Sesion.html';
- 					var info_usuario={
- 						name:$('.registro #name').val(),
- 						email:$('.registro #email').val(),
- 						password:$('.registro #password').val(),
- 					};
- 					firebase.database().ref('info_usuario').push(info_usuario);
  				})
  				.catch(function() {
  					alert('Gracias por registrarte!!');

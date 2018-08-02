@@ -30,3 +30,15 @@ a:hover {
 	color: black
 }
 
+#index {
+	background-image: url("https://image.freepik.com/vector-gratis/fondo-con-dibujos-de-escuela_23-2147496287.jpg");
+	color: #5D5C5C;
+}
+
+#Up:hover,#In:hover {
+background-color: #990909;
+}
+
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+}
