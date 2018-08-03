@@ -24,7 +24,7 @@ function edita(obj) {
   inp.value="";    
   }
 }
-$('#guardar').on("click", function(){
+$('#guardar2').on("click", function(){
 
   var horas2 = $('.horas2 input');
   var horas2Val = { "h1": horas2[0].value, "h2": horas2[1].value, "h3": horas2[2].value, "h4": horas2[3].value, "h5": horas2[4].value, "h6": horas2[5].value};

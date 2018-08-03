@@ -1,5 +1,8 @@
-body {
-	font-family: arial;
+body {	
+	font-family: monospace;
+	font-size: 20px;
+	background-color: #ededed;
+	background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 .container {
 	max-width: 30em;
@@ -30,15 +33,32 @@ a:hover {
 	color: black
 }
 
-#index {
-	background-image: url("https://image.freepik.com/vector-gratis/fondo-con-dibujos-de-escuela_23-2147496287.jpg");
-	color: #5D5C5C;
-}
-
 #Up:hover,#In:hover {
-background-color: #990909;
+	color: #fff;
+	background-color: #444;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 8px;
+	border: none;
+	border-bottom: 4px solid #C5C5C2;
 }
 
-body {
-	font-family: 'PT Sans Narrow', sans-serif;
+#Up,#In {
+	margin: 20px;
+	color: #000;
+background-color: #8A8A8A;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 8px;
+	overflow: hidden;
+	border-bottom: 4px solid #C5C5C2;
+}
+
+.texto {
+		color: #29AA7D;
+}
+
+img {
+	width: 20%;
+	margin: 30px;
 }
