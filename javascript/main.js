@@ -1,6 +1,6 @@
 $('.horas').click(function modifica(data, handler) {
   if (data.target == this) {
-    tab=document.getElementById('tabla');
+    tab=document.getElementById('tabla2');
     for (i=0; ele=tab.getElementsByTagName('td')[i]; i++) {
       if (ele){
        edita(ele);

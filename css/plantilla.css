@@ -2,14 +2,6 @@ body {
 	font-family: arial;
 }
 
-tr.dias {
-	background-color: red;
-}
-
-.horas {
-	background-color: #88AEF7; 
-}
-
 .table td {
 	padding: 20px;
 	padding-bottom: 60px;
@@ -27,14 +19,6 @@ tr.dias2 {
 	background-color: #EBEBEB;
 }
 
-tr.dias3 {
-	background-color: #DC008F;
-}
-
-.horas3 {
-	background-color: #609;
-}
-
 #table {
 	padding: 0;
 }
@@ -47,9 +31,46 @@ input {
 }
 
 .table-bordered td,{
-    border: 1px solid #dee2e6;
+    border: 1px solid #ddd;
 }
 #guardar:hover {
 	background-color: #990909;
 	border-color: black;
 }
+
+.horas input{
+	color: #29AA7D;
+}
+
+.dias{
+	color: #29AA7D
+
+}
+
+body{
+	background-color: #ddd;
+}
+.dias {
+	background-color: #fff;
+}
+
+tbody {
+	background-color: #fff;
+}
+
+#tabla2 {
+	margin: auto;
+	text-align: center;
+	width: 75%;
+	-webkit-box-shadow: 12px 12px 10px #999;
+	
+}
+
+#tabla2 td{
+	width: 120px;
+}
+
+tr .dias {
+	border-radius: 800px;
+}
+
