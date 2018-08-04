@@ -17,7 +17,7 @@
  				.auth()
  				.signInWithEmailAndPassword(email, password)
  				.then(function(){
- 					location.href='plantilla.html';
+ 					location.href='Plantilla.html';
  				})
  				.catch(function(error) {
  					alert('No eres bienvenido');
